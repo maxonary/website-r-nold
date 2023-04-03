@@ -28,12 +28,14 @@ jobs:
         run: npm run build
 
       - name: Firebase login
-        uses: FirebaseExtended/action-hosting-deploy@v1
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           firebase_token: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Firebase deploy
-        uses: FirebaseExtended/action-hosting-deploy@v1
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          firebase_token: ${{ secrets.FIREBASE_TOKEN }}
-          args: --only hosting --message "Deploy from GitHub Actions"
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBSITE_R_NOLD }}'
+          channelId: live
+          projectId: website-r-nold
