@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "r-nold || Collection of projects";
 ---
@@ -13,10 +15,10 @@ const pageTitle = "r-nold || Collection of projects";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/projects/">Projects</a>
+		<Navigation />
 
 		<h1>{pageTitle}</h1>
+
+		<Footer />
 	</body>
 </html>

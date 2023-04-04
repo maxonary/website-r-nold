@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 
 ---
 
@@ -12,9 +14,7 @@ import '../styles/global.css';
 		<title>r-nold || Collection of projects</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>    
-        <a href="/projects/">Projects</a> 
+        <Navigation />
 
         <h1>Projects</h1>
         <h2>My Astro Learning Blog</h2>
@@ -25,5 +25,6 @@ import '../styles/global.css';
       		<li><a href="/posts/post-3/">Post 3</a></li>
 		</ul>
 
+		<Footer />
 	</body>
 </html>
