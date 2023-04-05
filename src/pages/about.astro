@@ -17,8 +17,9 @@ const identity = {
 };
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
+const actualTime = 2;
 
 const skillColor = "navy";
 const fontWeight = "bold";
@@ -62,4 +63,7 @@ const textCase = "uppercase";
     {finished && <p>I finished this tutorial!</p>}
 
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+
+    {actualTime === 2 ? <p>It took me 2 days to finish.</p> : <p>It did not take me 3 days to finish.</p>}
+
 </BaseLayout>
