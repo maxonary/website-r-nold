@@ -1,11 +1,10 @@
 ---
 ---
-<!-- <div class="background-image-container" id="background-image-container"></div> -->
-
-<div class="background-image-container" id="background-image-container"></div>
+<div class="background-image-container" id="background-image-container">
+</div>
 <style>
     #background-image-container {
-        background: linear-gradient(rgba(169, 126, 126, 0.5), rgba(131, 31, 31, 0.5)), url("../scripts/randomBackground.js");
+        background: linear-gradient(rgba(169, 126, 126, 0.5), rgba(131, 31, 31, 0.5));
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -27,4 +26,6 @@
     }
 </style>
 
-<script type="text/javascript" src='../scripts/randomBackground.js'></script>
+<script>
+    import "../scripts/randomBackground.js"
+</script>
