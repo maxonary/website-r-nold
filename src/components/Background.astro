@@ -1,10 +1,11 @@
 ---
 ---
-<div class="background-image-container" id="background-image-container">
+<div id="background-image-container">
+    <div id="gradient"></div>
 </div>
+
 <style>
     #background-image-container {
-        background: linear-gradient(rgba(169, 126, 126, 0.5), rgba(131, 31, 31, 0.5));
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -13,16 +14,15 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: -3;
     }
 
-    #background-image-container img {
-        position: absolute;
-        top: 0;
-        left: 0;
+    #gradient {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(131, 31, 31, 0.5));
+        position: fixed;
         width: 100%;
         height: 100%;
-
+        z-index: -1;
     }
 </style>
 
